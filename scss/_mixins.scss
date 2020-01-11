@@ -7,3 +7,25 @@
     text-align: center;
     text-decoration: none;
 }
+@mixin clearfix {
+	&:before, &:after {
+	    content: "";
+	    display: table;
+	}
+	&:after {
+	    clear: both;
+	}
+}
+
+@mixin h2{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; 
+    font-size: 1.5em;
+}
+@mixin h4{
+    color: $Crvena;
+    margin: 0;
+    padding: 0;
+    font-size: 1em; 
+}

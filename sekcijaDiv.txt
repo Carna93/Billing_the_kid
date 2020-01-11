@@ -1,0 +1,97 @@
+#druga{
+    background-color: $Svetlo-siva2;
+    text-align: center;
+    padding: 1em 15em;
+    .glavni{
+        padding: 0 2.5em;
+        .levo{
+            float: left;
+            width: 39em;
+            padding-bottom: 1em;
+            img{
+                float: left;
+                width: 10em;
+                border-radius: 50%;
+                opacity: 0.6;
+                padding: 0;
+                margin: 0;
+            }
+            figcaption{
+                display: none;
+            }
+            &:hover{
+                img{
+                    opacity: 100;
+                }
+                figcaption{
+                    display: inline-block;
+                    padding: 3em;
+                    margin: 0;
+                    h2{
+                        @include h2();
+                    }
+                    h4{
+                        @include h4();
+                    }
+                }
+            }
+        }
+        .desno{
+            float: right;
+            width: 39em;
+            padding-top: 1em;
+            img{
+                float: right;
+                width: 10em;
+                border-radius: 50%;
+                opacity: 0.6;
+                padding: 0;
+                margin: 0;
+            }
+            figcaption{
+                display: none;
+            }
+            &:hover{
+                img{
+                    opacity: 100;
+                }
+                figcaption{
+                    display: inline-block;
+                    padding: 3em 6em;
+                    margin: 0;
+                    h2{
+                        @include h2();
+                    }
+                    h4{
+                        @include h4();
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+<div class="glavni">
+            <figure class="levo">
+                <img src="slike/fin1.jpg">
+                <figcaption>
+                    <h2>Get your financies in order.</h2> 
+                    <h4>Chose a plan that fit your needs.</h4>
+                </figcaption>
+            </figure>
+            <figure class="desno">
+                <img src="slike/fin2.jpeg">
+                <figcaption>
+                    <h2>Save more than ever</h2> 
+                    <h4>Click to get fast and easy tips.</h4>
+                </figcaption>
+            </figure>
+            <figure class="levo">
+                <img src="slike/fin3.jpg">
+                <figcaption>
+                    <h2>We are on the same team!</h2> 
+                    <h4>Our experts are just a call away.</h4>
+                </figcaption>
+            </figure>
+        </div>

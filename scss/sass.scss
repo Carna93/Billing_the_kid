@@ -53,8 +53,8 @@ main{
 
 section{
     padding: 1em 8em;
+    @include clearfix();
 }
-
 
 #prva{
     .buttons{
@@ -68,3 +68,74 @@ section{
         }
     }
 }
+
+#druga{
+    background-color: $Svetlo-siva2;
+    text-align: center;
+    padding: 2em 15em;
+    .levo{
+        float: left;
+        width: 100%;
+        img{
+            float: left;
+            width: 10em;
+            border-radius: 50%;
+            opacity: 0.6;
+            padding: 0;
+            margin: 0;
+        }
+        .tekst{
+            display: none;
+            padding: 3em 0;
+        }
+        &:hover{
+            img{
+                opacity: 100;
+            }
+            .tekst{
+                display: inline-block;
+                margin: 0;
+                padding-left: 12.6em;
+                h2{
+                    @include h2();
+                }
+                h4{
+                    @include h4();
+                }
+            }
+        }
+    }
+    .desno{
+        float: right;
+        width: 100%;
+        img{
+            float: right;
+            width: 10em;
+            border-radius: 50%;
+            opacity: 0.6;
+            padding: 0;
+            margin: 0;
+        }
+        .tekst{
+            display: none;
+            padding: 3em 0;
+        }
+        &:hover{
+            img{
+                opacity: 100;
+            }
+            .tekst{
+                display: inline-block;
+                padding-right: 18em;
+                margin: 0;
+                h2{
+                    @include h2();
+                }
+                h4{
+                    @include h4();
+                }
+            }       
+        }
+    }
+}
+
