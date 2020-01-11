@@ -42,3 +42,10 @@
     padding: 0.5em 0.5em;
     margin: 1.5em;
 }
+@mixin transform{
+    -webkit-transform: opacity(100); /* WebKit */
+    -moz-transform: opacity(100); /* Mozilla */
+    -o-transform: opacity(100); /* Opera */
+    -ms-transform: opacity(100); /* Internet Explorer */
+    transform: opacity(100); /* CSS3 */
+}
