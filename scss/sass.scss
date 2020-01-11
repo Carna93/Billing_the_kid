@@ -212,6 +212,7 @@ section{
 #cetvrta{
     text-align: center;
     background-color: $Svetlo-siva2;
+    padding-bottom: 3em;
     h2{
         @include h2();
         color: $Naslovi;
@@ -246,5 +247,18 @@ section{
             padding: 0.5em 0.5em;
             color: $Boja-fonta;
         }
+    }
+}
+
+footer{
+    background-color: $Tamno-plava;
+    height: 2em;
+    width: 100%;
+    padding: 1em 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    span{
+        color: $Crvena;
     }
 }
