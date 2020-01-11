@@ -139,3 +139,73 @@ section{
     }
 }
 
+#treca{
+    padding: 2em 15em;
+    text-align: center;
+    h2{
+        @include h2();
+        color: $Naslovi;
+        margin: 1em 1em; 
+    }
+    h4{
+        @include h4();
+        color: $Boja-fonta;
+        margin: 2em 1em; 
+    }
+    table{
+        margin: 0 auto;
+        color: white;
+        border-collapse: collapse;
+        width: 100%;
+        td, th{
+            padding: 1em 2em;
+            border: 1px solid $Boja-fonta;
+            
+        }
+        thead{
+            tr:first-child{
+                background-color: white;
+                th:nth-child(2){
+                    background-color: $Crvena;
+                    border: none;
+                }
+                th:first-child{
+                    border: none;
+                }
+            }
+            tr:nth-child(2){
+                background-color: $Tamno-plava;
+                th:first-child{
+                background-color: white;
+                border: none;
+                }
+                th:nth-child(n+2){
+                    border-top: none;
+                    border-bottom: none;
+                    border-left: none;
+                    border-right: 1px solid $Boja-fonta;
+                }
+            }    
+        }
+        tbody{
+            border: 1px solid $Boja-fonta;
+            tr:first-child{
+                
+                th:first-child{
+                    background-color: $Crvena;
+                }
+                th:nth-child(2){
+                    background-color: $Tamno-plava;
+                }
+                td{
+                    background-color: white;
+                    color: $Boja-fonta;
+                }
+            }
+            tr:nth-child(n+2){
+                @include tabele();
+            }
+        }
+    }
+}
+
