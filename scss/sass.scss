@@ -209,3 +209,42 @@ section{
     }
 }
 
+#cetvrta{
+    text-align: center;
+    background-color: $Svetlo-siva2;
+    h2{
+        @include h2();
+        color: $Naslovi;
+        margin: 2em 1em; 
+    }
+    .map{
+        float: left;
+        width: 50%;
+    }
+    form{
+        background-color: $Crvena;
+        float: right;
+        width: 50%;
+        height: 13em;
+        select{
+            width: 10em;
+            @include pading();
+        }
+        input[type=text]{
+            width: 18em;
+            @include pading();
+            color: $Boja-fonta;
+        }
+        input[type=email]{
+            width: 31.2em;
+            padding: 0.5em 0.5em;
+            margin-bottom: 1.5em;
+            color: $Boja-fonta;
+        }
+        textarea{
+            width: 32em;
+            padding: 0.5em 0.5em;
+            color: $Boja-fonta;
+        }
+    }
+}
