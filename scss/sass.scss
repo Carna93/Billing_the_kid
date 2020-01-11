@@ -1,5 +1,5 @@
 @import 'vars';
-
+@import 'mixins';
 body{
     margin: 0;
     font-family: $font-family;
@@ -47,6 +47,24 @@ main{
         margin-top: 31em;
         h1, h3, h4{
             margin: 0;
+        }
+    }
+}
+
+section{
+    padding: 1em 8em;
+}
+
+
+#prva{
+    .buttons{
+        float: right;
+        @include dugmici();
+    }
+    a{
+        &:hover{
+            background-color: $Boja-fonta;
+            color: white;
         }
     }
 }
